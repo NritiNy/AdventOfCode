@@ -1,3 +1,3 @@
 [submodule "AdventOfCodeLib"]
-	path = AdventOfCodeLib
+	path = "C#/AdventOfCodeLib"
 	url = https://github.com/NritiNy/AdventOfCodeLib
