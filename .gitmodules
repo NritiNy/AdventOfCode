@@ -1,0 +1,3 @@
+[submodule "AdventOfCodeLib"]
+	path = AdventOfCodeLib
+	url = https://github.com/NritiNy/AdventOfCodeLib
