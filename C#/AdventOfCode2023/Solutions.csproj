@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AoCLib" Version="1.0.2" />
+    <PackageReference Include="AoCLib" Version="1.1.0" />
   </ItemGroup>
 
 </Project>

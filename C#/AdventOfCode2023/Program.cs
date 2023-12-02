@@ -27,8 +27,16 @@ if (null == Part1Field || null == Part1Field.GetValue(Day))
 
 if (Part1Field.GetValue(Day) is Puzzle.Solution Part1)
 {
-    var solution = Part1(input);
-    Console.WriteLine($"Part1: {puzzle.Submit1(solution)} ({solution})");
+    var example = puzzle.GetPart1Example();
+    if (example.Answer != Part1(example.Lines))
+    {
+        Console.WriteLine($"Failed example for part 1:\nExpected '{example.Answer}' but got '{Part1(example.Lines)}\n'");
+    }
+    else
+    {
+        var solution = Part1(input);
+        Console.WriteLine($"Part1: {puzzle.Submit1(solution)} ({solution})");
+    } 
 } 
 else
 {
@@ -46,8 +54,16 @@ if (null == Part2Field || null == Part2Field.GetValue(Day))
 
 if (Part2Field.GetValue(Day) is Puzzle.Solution Part2)
 {
-    var solution = Part2(input);
-    Console.WriteLine($"Part2: {puzzle.Submit2(solution)} ({solution})");
+    var example = puzzle.GetPart2Example();
+    if (example.Answer != Part2(example.Lines))
+    {
+        Console.WriteLine($"Failed example for part 2:\nExpected '{example.Answer}' but got '{Part2(example.Lines)}\n'");
+    }
+    else
+    {
+        var solution = Part2(input);
+        Console.WriteLine($"Part2: {puzzle.Submit2(solution)} ({solution})");
+    }
 }
 else
 {
