@@ -1,0 +1,7 @@
+11687500
+
+broadcaster -&gt; a, b, c
+%a -&gt; b
+%b -&gt; c
+%c -&gt; inv
+&amp;inv -&gt; a
